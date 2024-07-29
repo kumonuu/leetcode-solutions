@@ -11,7 +11,7 @@ impl Solution {
         for (i, &num) in nums.iter().enumerate() {
             if let Some(&j) = map.get(&(target - num)) {
                 if i as i32 != j {
-                    return vec![i as i32, j]
+                    return vec![i as i32, j];
                 }
             }
         }
